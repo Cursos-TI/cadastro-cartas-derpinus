@@ -8,7 +8,7 @@ char estado1, estado2;
 char codigo1[3], codigo2[3];
 char cidade1[50], cidade2[50];
 int populacao1, pturistico1, populacao2, pturistico2;
-double area1, pib1, area2, pib2;
+float area1, pib1, area2, pib2;
 
   // Área para entrada de dados
 
@@ -16,16 +16,16 @@ double area1, pib1, area2, pib2;
   printf("\nCarta: 1\n");
 
   printf("Digite a sigla do Estado (A - H): ");
-    scanf("%c", &estado1);
+    scanf(" %c", &estado1);
   printf("Digite o Codigo da Carta (Ex.:P01): ");
     scanf("%s", codigo1);
   printf("Digite o nome da Cidade: ");
-    scanf("%s", &cidade1);
+    scanf("%s", cidade1);
   printf("Digite a Populacao: ");
     scanf("%d", &populacao1);
-  printf("Digite a Area (km²): ");
+  printf("Digite a Area (km2): ");
     scanf("%f", &area1);
-  printf("Digite o PIB(Bi): "); // 
+  printf("Digite o PIB(Bi): ");
     scanf("%f", &pib1);
   printf("Digite o numero de pontos Turisticos: ");
     scanf("%d", &pturistico1);
@@ -39,10 +39,10 @@ double area1, pib1, area2, pib2;
   printf("Digite o Codigo da Carta (Ex.:P01): ");
     scanf("%s", codigo2);
   printf("Digite o nome da Cidade: ");
-    scanf("%s", &cidade2);
+    scanf("%s", cidade2);
   printf("Digite a Populacao: ");
     scanf("%d", &populacao2);
-  printf("Digite a Area (km²): ");
+  printf("Digite a Area (km2): ");
     scanf("%f", &area2);
   printf("Digite o PIB(Bi): ");
     scanf("%f", &pib2);
@@ -62,8 +62,8 @@ double area1, pib1, area2, pib2;
   printf("Codigo da Carta: %s\n",codigo1);
   printf("Cidade: %s\n",cidade1);
   printf("Populacao: %d\n",populacao1);
-  printf("Area (km²): %lf\n",area1);
-  printf("PIB: %lf\n",pib1);
+  printf("Area (km2): %.2f\n",area1);
+  printf("PIB: %.2f\n",pib1);
   printf("Pontos Turisticos: %d\n",pturistico1);
 
   printf("\nCarta: 2\n");
@@ -72,8 +72,8 @@ double area1, pib1, area2, pib2;
   printf("Codigo da Carta: %s\n",codigo2);
   printf("Cidade: %s\n",cidade2);
   printf("Populacao: %d\n",populacao2);
-  printf("Área (km²): %lf\n" ,area2);
-  printf("PIB: %lf\n",pib2);
+  printf("Área (km2): %.2f\n" ,area2);
+  printf("PIB: %.2f\n",pib2);
   printf("Pontos Turisticos: %d\n",pturistico2);
 
   printf("\n----------------------------------------------------\n");
